@@ -1,25 +1,14 @@
 package jpabook.model.entity;
 
-<<<<<<< HEAD
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
-=======
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
->>>>>>> origin/master
 
 @Entity
 public class Member {
 
-<<<<<<< HEAD
     @Id
     @GeneratedValue
-=======
-    @Id @GeneratedValue
->>>>>>> origin/master
     @Column(name = "MEMBER_ID")
     private Long id;
 
@@ -29,12 +18,9 @@ public class Member {
     private String street;
     private String zipcode;
 
-<<<<<<< HEAD
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
 
-=======
->>>>>>> origin/master
     //Getter, Setter
     public Long getId() {
         return id;
@@ -75,7 +61,6 @@ public class Member {
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
     }
-<<<<<<< HEAD
 
     public List<Order> getOrders() {
         return orders;
@@ -84,6 +69,5 @@ public class Member {
     public void setOrders(List<Order> orders) {
         this.orders = orders;
     }
-=======
->>>>>>> origin/master
+
 }

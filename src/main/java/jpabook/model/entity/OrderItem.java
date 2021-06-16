@@ -10,7 +10,6 @@ public class OrderItem {
     @Column(name = "ORDER_ITEM_ID")
     private Long id;
 
-<<<<<<< HEAD
     @ManyToOne
     @JoinColumn(name = "ITEM_ID")
     private Item item;
@@ -21,15 +20,6 @@ public class OrderItem {
 
     private int orderPrice;
     private int count;
-=======
-    @Column(name = "ITEM_ID")
-    private Long itemId;
-    @Column(name = "ORDER_ID")
-    private Long orderId;
-
-    private int orderPrice; //주문가격
-    private int count;      //주문수량
->>>>>>> origin/master
 
     //Getter, Setter
     public Long getId() {
@@ -40,7 +30,6 @@ public class OrderItem {
         this.id = id;
     }
 
-<<<<<<< HEAD
     public Item getItem() {
         return item;
     }
@@ -55,22 +44,6 @@ public class OrderItem {
 
     public void setOrder(Order order) {
         this.order = order;
-=======
-    public Long getItemId() {
-        return itemId;
-    }
-
-    public void setItemId(Long itemId) {
-        this.itemId = itemId;
-    }
-
-    public Long getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(Long orderId) {
-        this.orderId = orderId;
->>>>>>> origin/master
     }
 
     public int getOrderPrice() {
